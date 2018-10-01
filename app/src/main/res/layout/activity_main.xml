@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.looidongsin.random.MainActivity"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/display"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:fontFamily="casual"-->
+        <!--android:text="Random item"-->
+        <!--android:textSize="50dp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:scrollHorizontally="true"-->
+        <!--android:maxLines="1" />-->
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Random item"
+            android:textSize="50dp"
+            android:textStyle="bold"/>
+
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:hint="Input new item here!" />
+
+        <Button
+            android:id="@+id/inputButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/editText1"
+            android:elevation="0dp"
+            android:text="Add" />
+        <Button
+            android:id="@+id/pickButton"
+            android:text="Pick"
+            android:layout_toRightOf="@+id/inputButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="*Click on item to delete*" />
+
+    <ListView
+                android:id="@+id/list1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+
+
+
+
+</LinearLayout>
