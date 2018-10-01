@@ -1,4 +1,4 @@
 # Random
 Random item generator
 
-testing
+Enter items to let program pick one out of the list of items.
